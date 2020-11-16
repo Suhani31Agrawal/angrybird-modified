@@ -11,13 +11,13 @@ function preload() {
 }
 
 function setup(){
-    var canvas = createCanvas(1200,400);
+    createCanvas(1200,400);
     engine = Engine.create();
     world = engine.world;
 
 
     ground = new Ground(600,height,1200,20);
-    platform = new Ground(150, 305, 300, 170);
+    platform = new Ground(125, 300, 250, 200);
 
     box1 = new Box(700,320,70,70);
     box2 = new Box(920,320,70,70);
